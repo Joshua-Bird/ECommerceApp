@@ -14,7 +14,7 @@ class PaymentFactoryTest {
     void testCreatePayment() {
         Payment payment = PaymentFactory.createPayment("ORD-123", 500.00, "2026-03-25", "Credit Card");
         
-        // Assertions for student style
+        // Assertions
         assertNotNull(payment);
         assertNotNull(payment.getPaymentId()); // ID should be generated
         assertEquals("ORD-123", payment.getOrderId());
